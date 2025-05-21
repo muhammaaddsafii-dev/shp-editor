@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="{{ asset('assets/dashboard/css/ready.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/dashboard/css/demo.css') }}">
+
+    @yield('css')
 </head>
 
 <body>
@@ -102,8 +104,7 @@
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="copyright ml-auto">
-                        2025, made by <a
-                            href="https://ruangbumi.com/">Ruang Bumi</a>
+                        2025, made by <a href="https://ruangbumi.com/">Ruang Bumi</a>
                     </div>
                 </div>
             </footer>
@@ -126,5 +127,7 @@
 <script src="{{ asset('assets/dashboard/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
 <script src="{{ asset('assets/dashboard/js/ready.min.js') }}"></script>
 <script src="{{ asset('assets/dashboard/js/demo.js') }}"></script>
+
+@stack('scripts')
 
 </html>
